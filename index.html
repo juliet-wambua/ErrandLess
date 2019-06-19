@@ -11,12 +11,86 @@
     
     <title>ErrandLess</title>
 </head>
-
 <body>
+        
+        
+       
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                            <div id="sign" class="first-form" id="sign-up">
+                            
+                            <form class="form" action="">
+                
+              <h4>Please fill this form to create an ErrandLess account.</h4>
+              
+              <label for="username" class="username" type="text">User Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" placeholder="Enter User Name" class="username" required>
 
-    
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
+              <br><label for="email" class="email" type="Email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="text" placeholder="Enter Email" name="email" required>
+        
+              <br><label for="psw" id="password">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="password" placeholder="Enter Password" name="psw" required>
+        
+              <br><label for="psw-repeat" id="password">Confirm Password:</label>
+              <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+              
+              <br><label>
+                <input type="checkbox" checked="checked" class="remember"> Remember me
+              </label>
+        
+              <p class="terms">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        
+              <div class="clearfield">
+                <button type="submit" class="signupbtn">Sign Up</button>
+                <button type="button" class="cancelbtn">Cancel</button>
+              </div>
+            </form>
+            </div>
+        </div>
+          
+         
+         
+
+
+         <div class="col-md-5">
+        
+                
+               
+                
+                
+                <div id="login" class="login-form">
+                        <h4>Please login if you have an account.</h4>
+                  
+                  <form class="login-form" action="">
+                                  
+                    <div class="container">
+                      <label for="username" class="username" >User Name:</label>
+                      <input type="text" placeholder="Enter Username" id="username" required><br>
+                
+                      <label for="psw" class="password">Password:</label>&nbsp;&nbsp;&nbsp;
+                      <input type="password" placeholder="Enter Password" id="password" required>
+                        
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+                
+                    
+                    &nbsp;&nbsp;&nbsp;<button type="button"  class="cancelbtn">Cancel</button><br>&nbsp;&nbsp;&nbsp;
+                      <span class="password">Forgot <a href="#">password?</a></span>
+                    
+                  </form>
+                </div>
+            </div>
+        
+    </div>
+</div>  
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
