@@ -219,5 +219,43 @@ box-sizing: border-box;
 background-image: url("../images/img-01.jpg")
 }
 .avatar{
-  border-radius: 50%
+  border-radius: 50%;
+}
+#ava{
+  border-radius: 50%;
+}
+
+
+
+
+#mail{
+  height: 3.5rem;
+  width: 36rem;
+  color:white;
+}
+
+#usf{
+  color: #ddd;
+  padding: 3rem;
+  align-items: center;
+}
+
+#f_name{
+   margin-left:16rem;
+   /* margin-right: auto; */
+   
+}
+#mail{
+  margin-left:16rem;
+  /* margin-right: auto; */
+}
+
+#pass{
+  margin-left:16rem;
+  /* margin-right: auto; */
+}
+
+#c_pass{
+  margin-left:13rem;
+  /* margin-right: auto; */
 }
