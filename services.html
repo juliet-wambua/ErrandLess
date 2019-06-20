@@ -1,0 +1,82 @@
+<!-- SERVICES PAGE -->
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Page Title</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+   <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+   <script src="js/jquery-3.4.1.js"></script>
+   <script src="js/scripts.js"></script>
+</head>
+<body>
+   <div class="container">
+           <div class="jumbotron jumbotron-fluid">
+                   <div class="container">
+                     <h1 class="display-4">Make Request</h1>
+                     <p class="lead">Errand</p>
+                   </div>
+                 </div>
+           <div id="typeErrand">
+                       <select class="custom-select" id="vary">
+                               <option selected>Types of Errand</option>
+                               <option value="1">Booking keeping</option>
+                               <option value="2">Data Entry</option>
+                               <option value="3">Proposal Writing</option>
+
+                       </select>
+          </div>
+            <br>
+
+          <div id="Time">
+               <select class="custom-select" id="duration">
+                       <option selected>Duration</option>
+                       <option value="1">1 day</option>
+                       <option value="2">2 days</option>
+                       <option value="3">5 days</option>
+                       <option value="3">1 week</option>
+                       <option value="3">2 week</option>
+               </select>
+               <br>
+               <button id="submit" onclick="errand()" > Submit</button>
+          </div>
+          <br>
+          <div class="form-group">
+               <label for="exampleFormControlTextarea1">Description</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <table class="table">
+       <thead id="result">
+         <tr>
+                <th scope="col">Errand No.</th>
+                        <th scope="col">Errand</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">cost</th>
+         </tr>
+        </thead>
+    <tbody>
+            <tbody id="result">
+                    <tr>
+           <th scope="row">1</th>
+           <td id="Time"></td>
+           <td id="errand"></td>
+           <td id="cost"></td>
+         </tr>
+       </tbody>
+     </table>
+
+
+   <!-- JULIES WORK -->
+
+   <p id="time"></p>
+   <form>
+       <input type="date" required><input type="time" required>
+       <input type="submit">
+   </form>
+   <span></span>
+ </div>
+</body>
+</html>
+<!-- SERVICES PAGE -->
