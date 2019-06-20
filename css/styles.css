@@ -70,4 +70,17 @@
         .terms{
             color:rgb(146, 173, 201);
         }
-       
+        .about{
+          background-image: url("../images/TO-DO.jpg");
+        }
+        /* about us page */
+        .about, body{
+          background-image: url("../images/errands2.jpg");
+          background-position: cover;
+          background-size: cover;
+          text-align: center;
+          background-repeat: no-repeat;
+          
+          color: black;
+          font-family: 'Courier New', Courier, monospace;
+       }
