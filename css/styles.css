@@ -427,6 +427,11 @@ background-image: url("../images/img-01.jpg")
       #progress{
         margin-top: 10rem;
       }
+
+
+      .serv{
+        margin-top: 60rem;
+      }
       ul {
         list-style-type: none;
         margin: 0;
@@ -465,4 +470,8 @@ background-image: url("../images/img-01.jpg")
   .input-group mb-3{
     background-image: url("banner-bg.jpg")
   }
+<<<<<<< HEAD
   
+=======
+   
+>>>>>>> fcc2a8d8b73e0d26c1734583afa116d9c119f066
