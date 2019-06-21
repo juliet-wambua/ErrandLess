@@ -12,35 +12,50 @@
 </head>
 
 <body>
+    <div class="container serv">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+
+<body>
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                
               <h1 class="display-4">MAKE ERRAND REQUEST</h1>
-              <p class="lead">Post an Errand to help you</p>
+              <p class="lead">We are you trusted  errands partner</p>
             </div>
           </div>
 
-        
+
+        <div>
+
+    
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <label class="input-group-text" for="inputGroupSelect01">Errand</label>
                 </div>
                 <select class="custom-select" id="Errand">
-                  <option selected>Choose...</option>
+                  <option selected></option>
                   <option value="1">Book keeping</option>
                   <option value="2">Data entry</option>
+ 
+                  <option value="3">propsal writing</option>
+                </select>
+              </div>
+        </div>
+
                   <option value="3">proposal writing</option>
                 </select>
               </div>
         
+
         <div >
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <label class="input-group-text" for="inputGroupSelect01">Time</label>
                 </div>
                 <select class="custom-select" id="Days">
-                  <option selected>Choose...</option>
+                  <option selected></option>
                   <option value="1 days">1 days</option>
                   <option value="2 days">2 days</option>
                   <option value="3 days">3 days</option>
@@ -53,13 +68,16 @@
                   <label class="input-group-text" for="inputGroupSelect01">cost</label>
                 </div>
                 <select class="custom-select" id="Pay">
-                  <option selected>Choose...</option>
+                  <option selected></option>
                   <option value="500">1day</option>
                   <option value="1000">2days</option>
                   <option value="1500">3 days </option>
                 </select>
               </div>
         </div>
+        <div class="text-center">
+            <button class="btn btn-info order" type="submit">Order</button>
+
         <br>
         <h1>input document</h1>
         <form id="form"> 
@@ -81,6 +99,7 @@
          
               
             <button class="btn btn-info order" type="submit" >Order</button>
+
         </div>
         <table class="table">
             <thead>
@@ -103,6 +122,56 @@
             </tbody>
           </table>
         <div class="text-center">
+ 
+           
+         
+          
+        </div>
+        <div id="paypal">
+          <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+          <script>paypal.Buttons().render('body');</script>
+          
+        </div>
+       
+   
+        
+       <div id="upload">
+           
+        <h1>Input document</h1>
+        <form id="form">
+                          <input type='file' />
+                  <br><img id="myImg" src="#" alt="your image" height=200 width=100>
+                          <br>
+                  <img src="" id="preview">
+                  <input type="file" id="myFile" multiple size="50" onchange="myFunction()">
+                  <p id="demo"></p>
+                  <textarea rows="4" cols="50" name="comment" form="usrform">
+                      description...</textarea>
+                  
+                  <br>
+                  <button type="reset" onclick="alert('Your file is received')">send</button>
+                  </form>
+       </div>
+       <div id="progress">
+        <h3>Progress Checck</h3>
+
+                 <p id="time"></p>
+             <form>
+                 <input type="date" required placeholder="month/date/year">
+                 <input type="time" required hours:minutes:am,pm>
+                 <input type="submit">
+             </form>
+             <span></span>
+      </div>
+
+
+
+                  <p id="time"></p>
+              <form>
+                  <input type="date" required placeholder="month/date/year">
+                  <input type="time" required hours:minutes:am,pm>
+                  <input type="submit">
+
           
        <div id="progress">
          <h3>Progress Check</h3>
@@ -116,11 +185,15 @@
                   
                   <button type="submit" onclick="alert('Thank you for using ErrandLess!')">send</button>
                 
+
               </form>
               <span></span>
        </div>
           
     </div>
+ 
+
     
+
 </body>
 </html>
