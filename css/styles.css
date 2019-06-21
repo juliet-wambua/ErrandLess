@@ -84,3 +84,16 @@
           color: black;
           font-family: 'Courier New', Courier, monospace;
        }
+
+       body{
+        text-align: center;
+        
+      }
+      
+      #progress{
+        margin-top: 10rem;
+      }
+
+      .serv{
+        margin-top: 60rem;
+      }

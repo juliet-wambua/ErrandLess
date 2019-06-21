@@ -1,0 +1,108 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Errand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="container serv">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">MAKE ERRAND REQUEST</h1>
+              <p class="lead">Post an Errand to help you</p>
+            </div>
+          </div>
+
+        <div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">Errand</label>
+                </div>
+                <select class="custom-select" id="Errand">
+                  <option selected>Choose...</option>
+                  <option value="1">Book keeping</option>
+                  <option value="2">Data entry</option>
+                  <option value="3">propsal writing</option>
+                </select>
+              </div>
+        </div>
+        <div >
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">Time</label>
+                </div>
+                <select class="custom-select" id="Days">
+                  <option selected>Choose...</option>
+                  <option value="1 days">1 days</option>
+                  <option value="2 days">2 days</option>
+                  <option value="3 days">3 days</option>
+                </select>
+              </div>
+        </div>
+        <div >
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">cost</label>
+                </div>
+                <select class="custom-select" id="Pay">
+                  <option selected>Choose...</option>
+                  <option value="500">1day</option>
+                  <option value="1000">2days</option>
+                  <option value="1500">3 days </option>
+                </select>
+              </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-info order" type="submit">Order</button>
+        </div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Order No.</th>
+                <th scope="col">TypeOfErrand</th>
+                <th scope="col">Time</th>
+                <th scope="col">Cost</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="Job">
+              <tr>
+                <th scope="row">1</th>
+                <td id="typeOfErrand"></td>
+                <td id="Time"></td>
+                <td id="Cost"></td>
+                <td id="Total"></td>
+              </tr>
+            </tbody>
+          </table>
+        <div class="text-center">
+           
+          <button class="btn btn-info add-Job" type="submit">Add Another</button>
+          
+        </div>
+        <div id="paypal">
+          <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+          <script>paypal.Buttons().render('body');</script>
+        </div>
+        <button class="btn btn-info add-Job" type="submit">checkout</button>
+       <div id="progress">
+         <h3>Progress Checck</h3>
+
+                  <p id="time"></p>
+              <form>
+                  <input type="date" required placeholder="month/date/year">
+                  <input type="time" required hours:minutes:am,pm>
+                  <input type="submit">
+              </form>
+              <span></span>
+       </div>
+          
+    </div>
+</body>
+</html>
