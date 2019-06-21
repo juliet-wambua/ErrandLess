@@ -87,10 +87,10 @@ margin: 0;
 
 
 .home{
-background-image: url("../images/errand3.png"), url("../images/TO-DO.jpg");
-background-position: left top, bottom right;
-width:100%;
-height:600px;
+background-image: url("../images/intro-bg.jpg")!important;
+/* background-position: left top, bottom right; */
+/* width:100%;
+height:600px; */
 background-repeat: no-repeat;
 background-color: lightslategray;
 }
@@ -100,7 +100,7 @@ list-style: none;
 text-transform: uppercase;
 padding: 25px;
 text-align: center;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: fantasy;
 }
 
 nav{
@@ -259,3 +259,136 @@ background-image: url("../images/img-01.jpg")
   margin-left:13rem;
   /* margin-right: auto; */
 }
+
+        
+        
+        /* Input fields */
+        input[type=text], input[type=password] {
+          width: 50%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        /* Background color when focusing on input fields*/
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        /*Buttons Styles*/
+        button {
+          background-color: rgb(42, 106, 165);
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 50%;
+          opacity: 0.9;
+        }
+        button:hover {
+          opacity:2;
+        }
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          padding: 10px 10px;
+          background-color:brown;
+          margin-right: 10px;
+        }
+        
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+          float: left;
+          width: 50%;
+        }
+        
+        /* container padding */
+        .container {
+          padding: 16px;
+        }
+        
+    
+        /* Clear fields */
+        .clearfields::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+          .cancelbtn, .signupbtn {
+             width: 100%;
+          }
+        }
+        .remember{
+            margin-bottom:15px;
+        }
+        .terms{
+            color:rgb(146, 173, 201);
+        }
+        .about{
+          background-image: url("../images/TO-DO.jpg");
+        }
+        /* about us page */
+        .about, {
+          background-image: url("../images/errands2.jpg");
+          background-position: cover;
+          background-size: cover;
+          text-align: center;
+          background-repeat: no-repeat;
+          
+          color: black;
+          font-family: 'Courier New', Courier, monospace;
+       }
+       body{
+        text-align: center;
+        
+      }
+      
+      #progress{
+        margin-top: 10rem;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: inline;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+        background-color: #111;
+      }
+      
+      body{
+        font-family: fantasy!important;
+
+      }body, html {
+        height: 100%;
+    }
+       .me{
+         background-image: url("banner-bg.jpg")
+
+  }
+  .input-group mb-3{
+    background-image: url("banner-bg.jpg")
+  }
+    
